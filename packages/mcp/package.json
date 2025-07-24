@@ -13,7 +13,7 @@
     "lint": "eslint src/**/*.ts"
   },
   "dependencies": {
-    "@orval/core": "7.10.0",
-    "@orval/zod": "7.10.0"
+    "@orval/core": "workspace:*",
+    "@orval/zod": "workspace:*"
   }
 }
