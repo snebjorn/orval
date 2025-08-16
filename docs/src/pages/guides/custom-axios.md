@@ -1,4 +1,7 @@
-### Custom instance
+---
+id: custom-axios
+title: Custom Axios instance
+---
 
 You can add a mutator function to your config and setup a custom instance of axios.
 

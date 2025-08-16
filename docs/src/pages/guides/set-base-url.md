@@ -1,4 +1,7 @@
-## Use your own base url
+---
+id: set-base-url
+title: Use your own base url
+---
 
 Orval allows you to set a custom base url for each OpenAPI specification. This can be a part of the url that's been omitted from the specification or the entire url. You can also configure Orval to read the `servers` field in the specification.
 

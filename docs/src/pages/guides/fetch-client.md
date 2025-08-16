@@ -1,4 +1,7 @@
-### Fetch client
+---
+id: fetch-client
+title: Fetch client
+---
 
 If you want to use to the `fetch` API as an http client with `swr` or `TanStack Query` clients, you can change the http client from `axios` to `fetch` API by setting the `httpClient` option.
 

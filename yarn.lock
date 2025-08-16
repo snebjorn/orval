@@ -13065,6 +13065,7 @@ __metadata:
     react-icons: "npm:^3.11.0"
     react-live: "npm:^2.2.2"
     react-select: "npm:^5.7.0"
+    recma-nextjs-static-props: "npm:^2.0.2"
     rehype-autolink-headings: "npm:^7.1.0"
     rehype-slug: "npm:^6.0.0"
     rehype-unwrap-images: "npm:^1.0.0"
@@ -24651,6 +24652,19 @@ __metadata:
   peerDependencies:
     acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
   checksum: 10c0/9921b1270581ff133b94678868e665ba0fb6285ee60a6936106bac4899196c2ffb02dde894d9bc088fbf3deacb3e2426a3452e72066bf1203cbefebd7809d93f
+  languageName: node
+  linkType: hard
+
+"recma-nextjs-static-props@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "recma-nextjs-static-props@npm:2.0.2"
+  dependencies:
+    "@types/estree": "npm:^1.0.0"
+    estree-util-scope: "npm:^1.0.0"
+    estree-walker: "npm:^3.0.0"
+    unified: "npm:^11.0.0"
+    unist-util-mdx-define: "npm:^1.0.0"
+  checksum: 10c0/e3d3147412808de7a7d2278098ca1c567565b1cc698e4aa15b8800d59ed6951c1afa197669eda873f752460241d5aaa7f949b8bc6a53b9a4c536f03ed3f91fb5
   languageName: node
   linkType: hard
 

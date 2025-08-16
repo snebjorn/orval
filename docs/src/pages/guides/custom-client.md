@@ -1,4 +1,7 @@
-### Custom client
+---
+id: custom-client
+title: Custom HTTP client
+---
 
 You can add a mutator function to your config and setup a custom instance of your preferred HTTP client.
 
