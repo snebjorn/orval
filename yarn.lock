@@ -13026,6 +13026,7 @@ __metadata:
     orval: "workspace:*"
     postcss: "npm:8.5.6"
     prettier: "npm:3.6.2"
+    prism-react-renderer: "npm:^2.4.1"
     prismjs: "npm:^1.21.0"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
@@ -23672,7 +23673,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prism-react-renderer@npm:^2.4.0":
+"prism-react-renderer@npm:^2.4.0, prism-react-renderer@npm:^2.4.1":
   version: 2.4.1
   resolution: "prism-react-renderer@npm:2.4.1"
   dependencies:
