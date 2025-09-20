@@ -3,13 +3,8 @@
   "namespace": "@orval",
   "version": "7.11.2",
   "license": "MIT",
-  "workspaces": [
-    "packages/*",
-    "samples/**",
-    "tests"
-  ],
   "private": true,
-  "packageManager": "yarn@4.9.3",
+  "packageManager": "pnpm@10.17.0",
   "devEngines": {
     "runtime": {
       "name": "node",
@@ -17,7 +12,7 @@
       "onFail": "error"
     },
     "packageManager": {
-      "name": "yarn",
+      "name": "pnpm",
       "onFail": "error"
     }
   },
@@ -29,15 +24,15 @@
     "release": "release-it",
     "prepare": "husky",
     "commitlint": "commitlint",
-    "update-samples": "turbo run generate-api && yarn format:samples",
-    "build": "turbo build --filter='./packages/*'",
-    "test": "turbo test --filter='./packages/*'",
-    "test:cli": "yarn workspace orval-tests clean && yarn workspace orval-tests generate && yarn workspace orval-tests build",
-    "test:samples": "turbo test --filter='./samples/**' --filter=!react-query-form-data --filter=!react-query-form-url-encoded --filter=!react-query-form-url-encoded-mutator --filter=!react-query-form-data-mutator --filter=!react-query-hook-mutator",
-    "test:ci": "CI=true yarn test && yarn test:cli && yarn test:samples",
-    "lint": "turbo run lint --filter='./packages/*'",
-    "lint:samples": "turbo run lint --filter='./samples/**'",
-    "dev": "turbo run dev --filter='./packages/*'",
+    "update-samples": "turbo run generate-api && pnpm format:samples",
+    "build": "turbo run build --filter=./packages/*",
+    "test": "turbo run test --filter=./packages/*",
+    "test:cli": "pnpm workspace orval-tests clean && pnpm workspace orval-tests generate && pnpm workspace orval-tests build",
+    "test:samples": "turbo run test --filter=./samples/** --filter=!react-query-form-data --filter=!react-query-form-url-encoded --filter=!react-query-form-url-encoded-mutator --filter=!react-query-form-data-mutator --filter=!react-query-hook-mutator",
+    "test:ci": "CI=true pnpm test && pnpm test:cli && pnpm test:samples",
+    "lint": "turbo run lint --filter=./packages/*",
+    "lint:samples": "turbo run lint --filter=./samples/**",
+    "dev": "turbo run dev --filter=./packages/*",
     "clean": "rimraf .turbo",
     "nuke": "rimraf .turbo .yarn node_modules",
     "clean:all": "turbo run clean",

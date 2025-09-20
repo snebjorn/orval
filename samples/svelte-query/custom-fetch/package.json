@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json && tsc -p tsconfig.node.json",
     "generate-api": "orval",
-    "test": "yarn run check"
+    "test": "pnpm run check"
   },
   "devDependencies": {
     "@faker-js/faker": "^9.9.0",
