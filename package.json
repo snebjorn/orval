@@ -9,15 +9,14 @@
     "tests"
   ],
   "private": true,
-  "packageManager": "yarn@4.9.3",
+  "packageManager": "bun@1.2.22",
   "devEngines": {
     "runtime": {
-      "name": "node",
-      "version": ">=24",
+      "name": "bun",
       "onFail": "error"
     },
     "packageManager": {
-      "name": "yarn",
+      "name": "bun",
       "onFail": "error"
     }
   },
@@ -29,12 +28,12 @@
     "release": "release-it",
     "prepare": "husky",
     "commitlint": "commitlint",
-    "update-samples": "turbo run generate-api && yarn format:samples",
+    "update-samples": "turbo run generate-api && bun run format:samples",
     "build": "turbo build --filter='./packages/*'",
     "test": "turbo test --filter='./packages/*'",
-    "test:cli": "yarn workspace orval-tests clean && yarn workspace orval-tests generate && yarn workspace orval-tests build",
+    "test:cli": "bun run workspace orval-tests clean && bun run workspace orval-tests generate && bun run workspace orval-tests build",
     "test:samples": "turbo test --filter='./samples/**' --filter=!react-query-form-data --filter=!react-query-form-url-encoded --filter=!react-query-form-url-encoded-mutator --filter=!react-query-form-data-mutator --filter=!react-query-hook-mutator",
-    "test:ci": "CI=true yarn test && yarn test:cli && yarn test:samples",
+    "test:ci": "CI=true bun run test && bun run test:cli && bun run test:samples",
     "lint": "turbo run lint --filter='./packages/*'",
     "lint:samples": "turbo run lint --filter='./samples/**'",
     "dev": "turbo run dev --filter='./packages/*'",

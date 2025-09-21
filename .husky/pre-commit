@@ -1,3 +1,3 @@
-yarn lint
-yarn test:ci
-yarn format:staged
+bun lint
+bun test:ci
+bun format:staged

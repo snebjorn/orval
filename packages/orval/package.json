@@ -6,7 +6,9 @@
   "files": [
     "dist"
   ],
-  "bin": "./dist/bin/orval.js",
+  "bin": {
+    "orval": "./dist/bin/orval.js"
+  },
   "type": "commonjs",
   "exports": {
     ".": {
@@ -48,7 +50,7 @@
   },
   "scripts": {
     "build": "tsdown --config-loader unconfig",
-    "dev": "tsdown --config-loader unconfig --watch src --onSuccess 'yarn generate-api'",
+    "dev": "tsdown --config-loader unconfig --watch src --onSuccess 'bun run generate-api'",
     "lint": "eslint .",
     "generate-api": "orval --config ../../samples/react-query/basic/orval.config.ts",
     "test": "tsc --noEmit && vitest",
