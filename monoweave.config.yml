@@ -1,0 +1,5 @@
+# https://monoweave.github.io/monoweave/configuration/#schema
+
+preset: monoweave/preset-recommended
+conventionalChangelogConfig: conventional-changelog-angular
+packageGroupManifestField: publishConfig.group

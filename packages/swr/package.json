@@ -12,6 +12,10 @@
     "dist",
     "!dist/**/*.d.ts.map"
   ],
+  "publishConfig": {
+    "access": "public",
+    "group": "orval"
+  },
   "scripts": {
     "build": "tsdown --config-loader unconfig",
     "dev": "tsdown --config-loader unconfig --watch src",

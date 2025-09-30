@@ -47,6 +47,10 @@
     "type": "git",
     "url": "git+https://github.com/orval-labs/orval.git"
   },
+  "publishConfig": {
+    "access": "public",
+    "group": "orval"
+  },
   "scripts": {
     "build": "tsdown --config-loader unconfig",
     "dev": "tsdown --config-loader unconfig --watch src --onSuccess 'yarn generate-api'",
