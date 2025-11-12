@@ -18939,6 +18939,7 @@ __metadata:
     "@faker-js/faker": "catalog:tooling"
     "@hono/zod-validator": "catalog:hono"
     "@modelcontextprotocol/sdk": "catalog:mcp"
+    "@orval/core": "workspace:*"
     "@tanstack/react-query": "catalog:react"
     "@tanstack/svelte-query": "catalog:svelte"
     "@tanstack/vue-query": "catalog:vue"
