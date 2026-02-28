@@ -7386,39 +7386,39 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@scalar/helpers@npm:0.2.15":
-  version: 0.2.15
-  resolution: "@scalar/helpers@npm:0.2.15"
-  checksum: 10c0/04d13b193bae1da233be9d8eb67eac31ccb5d07fa6fe3b322dc38fc68ef740a593026b3baf763e7f805ca217f5ed9e070cec65abf3d764e6a15c5defd258e41c
+"@scalar/helpers@npm:0.2.16":
+  version: 0.2.16
+  resolution: "@scalar/helpers@npm:0.2.16"
+  checksum: 10c0/dd3bf4da93e6024034ce9433f28e8561415067016df1065b3f3e89fb928b71672ec435c2b640588189ca11a49811b094f5d334e42eb6ed4daa6148f18ba6d03e
   languageName: node
   linkType: hard
 
-"@scalar/json-magic@npm:0.11.4, @scalar/json-magic@npm:^0.11.4":
-  version: 0.11.4
-  resolution: "@scalar/json-magic@npm:0.11.4"
+"@scalar/json-magic@npm:0.11.5, @scalar/json-magic@npm:^0.11.5":
+  version: 0.11.5
+  resolution: "@scalar/json-magic@npm:0.11.5"
   dependencies:
-    "@scalar/helpers": "npm:0.2.15"
+    "@scalar/helpers": "npm:0.2.16"
     pathe: "npm:^2.0.3"
     yaml: "npm:^2.8.0"
-  checksum: 10c0/6cead7e2ae1168bf08686956260951838aef11ba8f403acfc9fa64e7f348af388a3d647c236b5ad4f56dfb68747a9bed0767402800f847b68275858268e159bc
+  checksum: 10c0/41d51ee5fc86259e4f844fdc63c775e76f1825c89cc561dc29feccb1d301b075b67e8ae5a5350adc17ca2fec7ab619553065d6055dc06294fcbdeffce062f22e
   languageName: node
   linkType: hard
 
-"@scalar/openapi-parser@npm:^0.24.13":
-  version: 0.24.13
-  resolution: "@scalar/openapi-parser@npm:0.24.13"
+"@scalar/openapi-parser@npm:^0.24.15":
+  version: 0.24.15
+  resolution: "@scalar/openapi-parser@npm:0.24.15"
   dependencies:
-    "@scalar/helpers": "npm:0.2.15"
-    "@scalar/json-magic": "npm:0.11.4"
+    "@scalar/helpers": "npm:0.2.16"
+    "@scalar/json-magic": "npm:0.11.5"
     "@scalar/openapi-types": "npm:0.5.3"
-    "@scalar/openapi-upgrader": "npm:0.1.8"
+    "@scalar/openapi-upgrader": "npm:0.1.9"
     ajv: "npm:^8.17.1"
     ajv-draft-04: "npm:^1.0.0"
     ajv-formats: "npm:^3.0.1"
     jsonpointer: "npm:^5.0.1"
     leven: "npm:^4.0.0"
     yaml: "npm:^2.8.0"
-  checksum: 10c0/6d07cfb3fbba83d527ed3df56b6e7ebe9a77896eee6d1fbafad490f589b8d02d4ff87fc6bfba213b04f377173bc582b146ef19b3f6d6f0edd8ece9f0fcd53257
+  checksum: 10c0/e2385d1a57ec27a819099ce9964a68b48150d7ec669b885e7ebeb4bd378aa2396c62dfb75c4027b640d30ac11c4912fd906ddce7826bd55e75b07474b11f71bc
   languageName: node
   linkType: hard
 
@@ -7431,12 +7431,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@scalar/openapi-upgrader@npm:0.1.8":
-  version: 0.1.8
-  resolution: "@scalar/openapi-upgrader@npm:0.1.8"
+"@scalar/openapi-upgrader@npm:0.1.9":
+  version: 0.1.9
+  resolution: "@scalar/openapi-upgrader@npm:0.1.9"
   dependencies:
     "@scalar/openapi-types": "npm:0.5.3"
-  checksum: 10c0/d1399280eb7f9cfcd6aa118812b786c3165b8297dce941da5e8a14a02105ca712180a7da64eff962d77ec176ce0e369feb3aa64d4660d70cef3f43fa397b5198
+  checksum: 10c0/c49abc8cc80379b0ba5ee1e687e58009bf6b3d99858f0427832fcd74f8a9b8bc86251a6db87f658bb69ade84a1d8e77f665740ccacc0046756cbbfad64951b78
   languageName: node
   linkType: hard
 
@@ -21398,8 +21398,8 @@ __metadata:
     "@orval/solid-start": "workspace:*"
     "@orval/swr": "workspace:*"
     "@orval/zod": "workspace:*"
-    "@scalar/json-magic": "npm:^0.11.4"
-    "@scalar/openapi-parser": "npm:^0.24.13"
+    "@scalar/json-magic": "npm:^0.11.5"
+    "@scalar/openapi-parser": "npm:^0.24.15"
     "@scalar/openapi-types": "catalog:"
     "@types/fs-extra": "npm:^11.0.4"
     "@types/js-yaml": "npm:^4.0.9"

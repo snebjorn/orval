@@ -6,16 +6,21 @@ import type {
   OpenApiReferenceObject,
 } from '../types';
 import { isReference } from '../utils';
+import { getParamsInPath } from './params';
 
 interface GetParametersOptions {
   parameters: (OpenApiReferenceObject | OpenApiParameterObject)[];
   context: ContextSpec;
+  route: string;
 }
 
 export function getParameters({
   parameters,
   context,
+  route,
 }: GetParametersOptions): GetterParameters {
+  const pathTemplateParams = new Set(getParamsInPath(route));
+
   const result: GetterParameters = { path: [], query: [], header: [] };
   for (const p of parameters) {
     if (isReference(p)) {
@@ -24,16 +29,19 @@ export function getParameters({
         context,
       );
 
-      if (
-        parameter.in === 'path' ||
-        parameter.in === 'query' ||
-        parameter.in === 'header'
-      ) {
-        result[parameter.in].push({ parameter, imports });
+      const bucket =
+        parameter.name && pathTemplateParams.has(parameter.name)
+          ? 'path'
+          : parameter.in;
+
+      if (bucket === 'path' || bucket === 'query' || bucket === 'header') {
+        result[bucket].push({ parameter, imports });
       }
     } else {
-      if (p.in === 'query' || p.in === 'path' || p.in === 'header') {
-        result[p.in].push({ parameter: p, imports: [] });
+      const bucket = p.name && pathTemplateParams.has(p.name) ? 'path' : p.in;
+
+      if (bucket === 'query' || bucket === 'path' || bucket === 'header') {
+        result[bucket].push({ parameter: p, imports: [] });
       }
     }
   }

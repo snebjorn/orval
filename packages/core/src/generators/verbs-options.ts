@@ -119,6 +119,7 @@ export async function generateVerbOptions({
   const parameters = getParameters({
     parameters: [...verbParameters, ...(operationParameters ?? [])],
     context,
+    route,
   });
 
   const queryParams = getQueryParams({
